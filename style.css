@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Open Sans',sans-serif;
+}
+header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161,140,209,0.404) 0%, rgba(251,193,234,0.404)100%),url(img/ei_logo_s.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border: solid thin red;   
+}
+.hamburguer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0,0.5);
+}
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(135deg, #f09fe9 0, #6529a1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0,0 6px rgba(0, 0, 0,0.5);
+    transition: transform .3s ease-in-out;
+    transform: translate(100%)
+}
+.menu-navegacion * {
+    color: #fff;
+    text-decoration: none;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titulo {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.copy {
+    font-weight: 200px;
+    font-size: 300;
+}
+.spread {
+    transform: translate(0);
+}
+/* Agrega estilos para el formulario de registro */
+#formulario-registro {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#formulario-registro label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario-registro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-registro button {
+    background-color: #495c70;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario-registro button:hover {
+    background-color: #0056b3;
+}
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #7813dd;
+    margin-bottom: 40px;
+    font-size: 40px;
+    
+}
